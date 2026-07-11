@@ -2,7 +2,7 @@
 
 
 import { motion } from "framer-motion";
-import { Mail, Copy, Check, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -53,10 +53,10 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-red-500">Get In Touch</span>
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-white">
-              Let's build something amazing together.
+              Let&apos;s build something amazing together.
             </h2>
             <p className="max-w-md text-sm text-zinc-400 mt-2">
-              Have an idea, project, or opportunity you'd like to discuss? Drop me a message or connect via socials.
+              Have an idea, project, or opportunity you&apos;d like to discuss? Drop me a message or connect via socials.
             </p>
           </div>
 

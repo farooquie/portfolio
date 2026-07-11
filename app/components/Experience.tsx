@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Calendar, CheckCircle2 } from "lucide-react";
+import { Calendar, CheckCircle2 } from "lucide-react";
 
 interface ExperienceItem {
   role: string;
@@ -123,7 +123,7 @@ export default function Experience() {
 
                     {/* Brief description */}
                     <p className="text-xs sm:text-sm text-zinc-400 italic mb-4 leading-relaxed">
-                      "{exp.description}"
+                      &ldquo;{exp.description}&rdquo;
                     </p>
 
                     {/* Bullet list of achievements */}

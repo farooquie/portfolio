@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, FileText } from "lucide-react";
+import { MapPin, FileText } from "lucide-react";
 import Image from "next/image";
 
 const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -43,7 +43,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.05]"
           >
-            Hi, I'm Aman Ali <br />
+            Hi, I&apos;m Aman Ali <br />
             <span className="text-zinc-500 font-light">Full Stack Developer.</span>
           </motion.h1>
 
