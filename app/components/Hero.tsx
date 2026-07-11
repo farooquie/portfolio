@@ -74,7 +74,7 @@ export default function Hero() {
             {/* Avatar inside CTA */}
             <div className="relative w-8 h-8 rounded-full overflow-hidden border border-black/10 shrink-0">
               <Image
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&q=80"
+                src="/profile.jpg"
                 alt="Profile Avatar"
                 fill
                 className="object-cover"
