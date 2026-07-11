@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, MapPin, FileText } from "lucide-react";
 import Image from "next/image";
 
 const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -58,11 +58,12 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* Expandable CTA Button */}
+        {/* Call to Actions (CTA) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
+          className="flex flex-wrap gap-4 items-center"
         >
           <a
             href="https://github.com/farooquie"
@@ -93,6 +94,17 @@ export default function Hero() {
 
             {/* Spacer for sliding effect */}
             <div className="w-0 group-hover:w-6 transition-all duration-300" />
+          </a>
+
+          {/* Download Resume CTA */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/10 bg-white/[0.02] hover:bg-white/[0.06] text-sm font-semibold text-white tracking-wide transition-all duration-300 shadow-xl"
+          >
+            <FileText size={16} className="text-zinc-400" />
+            Download Resume
           </a>
         </motion.div>
       </div>
